@@ -1,5 +1,3 @@
-console.log('hi');
-
 const deg2rad = (deg: number): number => 2 * Math.PI * (deg - 90) / 360;
 
 const canvas = document.querySelector('canvas');
@@ -23,6 +21,7 @@ const timer = setInterval(() => {
   }
 }, 200);
 
+document.querySelector('body').insertAdjacentHTML('beforeend', '<div>press ESC to stop</div>');
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') {
     console.log('stopped');
