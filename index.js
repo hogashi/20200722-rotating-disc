@@ -1,4 +1,3 @@
-console.log('hi');
 var deg2rad = function (deg) { return 2 * Math.PI * (deg - 90) / 360; };
 var canvas = document.querySelector('canvas');
 var width = canvas.width, height = canvas.height;
@@ -21,6 +20,7 @@ var timer = setInterval(function () {
         _loop_1(radius);
     }
 }, 200);
+document.querySelector('body').insertAdjacentHTML('beforeend', '<div>press ESC to stop</div>');
 document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape') {
         console.log('stopped');
